@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 , .box2{
+            width: 200px;
+            height: 200px;
+            font-size: 100px;
+        }
+
+        /* 
+            margin overlay
+                -vertial (brother element) margin will overlay  
+                    -will take the bigger margin (both positive)
+
+                    special case:
+                        -margin have negative and a positive, then this will take the sum
+                        -if both margin are negative, then take the bigger negative
+
+                    margin overcross benefit in website develop    
+
+                father element
+                    -child element will send margin require to father element
+                    -therefore, father element margin fold will effect the layout of page
+
+        */
+        .box1{
+            background-color: #bfa;
+            margin-bottom: 100px;
+        }
+        .box2{
+            background-color: orange;
+            margin-top: 100px;
+        }
+
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* padding-top: 100px; */
+            border-top: 10px red solid;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+             margin-top: 100px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box3">
+        <div class="box4"></div>
+    </div>
+    <!-- <div class="box1"></div> -->
+    <!-- <div class="box2"></div> -->
+</body>
+</html>

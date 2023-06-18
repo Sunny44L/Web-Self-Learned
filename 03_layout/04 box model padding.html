@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 10px orange solid;
+            /* 
+                Padding
+                    -area between the border and content
+                    -four direction
+                        padding-top
+                        padding-right
+                        padding-bottom
+                        padding-left
+
+                    padding will effect the size of box
+                    color of content will extend out of padding
+
+                The visible box size is the sum as padding, content, and border
+                    -therefore, when making box model, need to make all 3 to add up.
+            */
+            padding-top: 100px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* 
+                Padding have similar property as border width, enter between 1 to 4 value
+
+                Padding is basically make a box inside box, and only write in the inner box
+                 
+            */
+        }
+
+        .inner{
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner">what</div>
+    </div>
+</body>
+</html>

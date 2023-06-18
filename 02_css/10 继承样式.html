@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* value set for p will also be inheritage by its offspring element 
+            -except any value related to background value
+        */
+        
+        p{
+            color: red;
+        }
+        div{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        I am a p element,
+        <span>I am a span element inside p</span>
+    </p>
+
+    <div>
+        this is a div,
+        <span>span inside a div
+            <em>this is the em inside span</em>
+        </span>
+    </div>
+</body>
+</html>

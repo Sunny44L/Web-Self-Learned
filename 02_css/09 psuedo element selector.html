@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+        }
+
+        /* 
+        psuedo element, represent element that in special position
+            use ：：begin
+            ::first-letter
+            ::first-line
+            ::selection
+            ::before
+            ::after
+                -before and after must be use with content
+        */
+            p::first-letter{
+                font-size: 30px;
+            }
+            p::first-line{
+                background-color: skyblue;
+            }
+            p::selection{
+                background-color: yellowgreen;
+            }
+            div::before{
+                content: 'abc';
+                color: red;
+            }
+            /* after is use for same meaning */
+            div::before{
+                content: " {";
+            }
+            div::after{
+                content: '}';
+            }
+    </style>
+</head>
+<body>
+    <div>hello, how are you</div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa consectetur nostrum, illo fugit inventore dolore possimus velit doloremque dolor amet consequuntur non fuga! Unde nulla accusantium saepe quidem aspernatur ipsum placeat quod cupiditate dolore sunt, ipsam et consectetur sequi mollitia at vitae commodi nisi culpa reiciendis quam fugit ea! Tempora suscipit nihil neque nostrum quos, pariatur commodi excepturi repellat, numquam dolorem reiciendis! Nam reprehenderit aspernatur ipsam qui sint, quisquam quam possimus cupiditate ut sit illum laboriosam deleniti eveniet itaque quas quia minima vitae. Eligendi reprehenderit, deserunt reiciendis adipisci, commodi maiores sequi minima eius quae neque nostrum natus nam praesentium sapiente veniam cupiditate alias repellat hic nihil laborum sit obcaecati. Tenetur officiis optio ullam beatae molestias ab eligendi recusandae incidunt totam, corrupti nihil corporis eaque commodi labore exercitationem, eius consectetur. Cumque facere aspernatur commodi consequuntur culpa possimus neque ducimus libero sed perspiciatis rerum ut nulla dolores nisi, deserunt tempore non, magni architecto, nemo esse ex. Amet similique cumque quasi officia, ratione magni dolorum numquam, ducimus vitae assumenda repellat accusamus mollitia voluptate sed animi sit voluptatum obcaecati quo excepturi. Voluptas, sapiente vero numquam officia ullam temporibus dolores nihil eius sit aut ea accusantium totam inventore vel in neque. Deleniti minus quaerat et?
+    </p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+            background-color: #bfa;
+            background-image: url(../images/01zxfv9.jpg);
+            background-repeat: no-repeat;
+
+            padding: 10px;
+            /* background-position: 200px 100px; */
+
+            /* 
+                设置边框的范围
+                background-clip
+                    -border-box: default
+                    -padding-box: will show up to padding
+                    -content-box: show up to content
+
+                background-origin:
+                    -padding-box: default, background-position only set within padding
+                    -content-box: within the content
+                    -border-box:   within the border
+            */
+            /* background-clip: border-box;
+            background-origin: border-box;
+            border: 10px double red; */
+                /* 
+                    background-size: width height
+                                     width auto
+                                     -cover, fill over the box, crop the rest
+                                     -contain, fit in image in, leave the space empty
+                */
+            background-size: contain ;
+            /* 
+                    background-color
+                              -image
+                              -repeat
+                              -size
+                              -origin
+                              -position
+                              -clip
+                              -attachment
+
+                    background: can contain all of them
+                                but postion must go first of size
+                                position/size
+                                origin clip(origin go first of clip)
+            */
+        }
+        .box2{
+            width: 300px;
+            height: 1000px;
+            background-color: orange;
+            background-image: url(../images/d_209894pr.jpg);
+            background-repeat: no-repeat;
+            /* 
+                background-atachment
+                    -scroll: default, background image will get scroll up/down
+                    -fixed : stay
+            */
+            background-attachment: fixed;
+            background: fixed red url(../images/01zxfv9.jpg) center center/contain border-box border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

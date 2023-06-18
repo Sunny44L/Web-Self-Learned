@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* only use these two for a href */
+        /* 
+            ：link use for link that have not been vist
+        */
+        a:link{
+            color: red;
+        }
+
+        /* 
+         ：visited mean website that had been visited
+
+          because of privacy issue, visited only use to change color
+        */
+        a:visited{
+            color: orange;
+        }
+
+        /* 
+            :hover 
+            use to have a different cursor 
+        */
+        a:hover{
+            color: skyblue;
+            font-size: 50px;
+        }
+
+        /* 
+         :active
+          use for change of text where click on it
+        */
+        a:active{
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.ca">google visit before</a>
+    <br><br>
+    <a href="https://www.baidu123.ca">baidu123 did not visit before</a>
+</body>
+</html>

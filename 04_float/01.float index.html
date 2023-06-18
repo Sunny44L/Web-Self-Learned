@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+
+            /* 
+                use float to make element to move left or right
+                    (only able to move inside its father element)
+                    float:
+                        none: default
+                        left: move to left
+                        right:move to right
+                    
+                    As long as not default, the horizontal equation does not need to be equal
+                        after element set as float, element will not longer be 文档流
+                            therefor, the element will move up
+
+                    float property:
+                        1.float element will goes higher layer, front
+                        2.element will move inside of its father element's 
+                            left or right
+                        3.float element will not mover out of its father element
+                        4.will not go ahead of previous float element
+                        5.if previous element is not float, then floated element
+                            will move down(since block element will take whole line)
+            */
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

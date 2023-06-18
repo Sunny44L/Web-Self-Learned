@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1
+        {
+            width: 100px;
+            height: 100px;
+            /* 
+                color unit: 
+                    -use color name 
+                        -ex:red, green, orange...
+                        -but use color name is inconvenience in css
+                    
+                    use RGB
+                        -use three color's saturation to get other color
+                        -every color is in between 0-255 (0%-100%)
+                        syntax: RGB
+
+                    RGBA
+                        -base on rgb, A represent transparent, from 1 to 0
+                            1 is solid, 0 is transparent, .5 is half transparent
+
+                    16进制的rgb
+                        -syntax #red green blue
+                        -color from 00-ff
+                        -if color code go with two digit repeat, can go with one
+                            ex: #aabbcc --> #abc
+
+                    color may pick by using some software to get their rgb, or 16
+
+                    HSL and HSLA : use for other industry
+                        H hue 色相 (0-360)
+                        S Saturation 0%-100%)
+                        L lightness (0%-100%)
+
+            */
+            background-color: red;
+            background-color: rgb(0, 255, 220);
+            background-color: rgb(255, 0, 0);
+            background-color: rgb(0, 0, 0); 
+            background-color: rgba(173, 173, 173,.5);
+            background-color: #ff0;
+            background-color: #ffff00;
+            background-color: hsla(200, 100%, 50%,0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

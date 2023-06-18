@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 500px;
+
+            background-image: radial-gradient(closest-side at 100px 100px, red, #bfa);
+            /* 
+                radial-gradient(##px ###px at 0% 0%(center center, top lef), color, color)
+                    -it will be base on the shape of the box
+                    -##,## is the size of the cirlce
+                    -0% 0% is the location of the radial
+                        -center center
+                        -top left
+                    - value 
+                        -circle
+                        -ellipse
+                        -closest-side
+                        -farthest-side
+                        -closest-corner
+                        -farthest-corner
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

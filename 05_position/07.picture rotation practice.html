@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 
+            set the size of the box
+            make it a relative so its a containing block
+        */
+        .img_rotate{
+            width: 710px;
+            height: 350px;
+            margin: 100px auto;
+            position: relative;
+        }
+        /* 
+            all img at one spot
+        */
+        .img_rotate li{
+            position: absolute;
+        }
+        /* 
+            img sizing
+        */
+        img{
+            width: 710px;
+            height: 350px;
+        }
+        /* 
+            make it a z-index
+        */
+        .img_rotate li:nth-child(n){
+            z-index: 1;
+        }
+        /* set the directional pointer location */
+        .pointer{
+            position: absolute;
+            z-index: 999;
+            bottom: 10px;
+            left: 40px;
+        }
+        /* pointer style */
+        .pointer a{
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(2555, 255, 255, 0.6);
+            border-radius: 50%;
+            margin-left: 4px;
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+
+    </style>
+</head>
+<body>
+<ul class="img_rotate">
+    <li>
+        <a href="javascript">
+            <img class="img1" src="./img/a2737e0515a8e1df.jpg!cc_1420x760.webp" alt="">
+        </a>
+    </li>
+    <li>
+        <a href="javascript">
+            <img class="img1" src="./img/aa08662d2284c7f6.jpg!cc_1420x760.webp" alt="">
+        </a>
+    </li>
+    <li>
+        <a href="javascript">
+            <img class="img1" src="./img/b8de3e9134828cc1.jpg!cc_1420x760.webp" alt="">
+        </a>
+    </li>
+    <div class="pointer">
+        <a class="active" href="javascript:;"></a>
+        <a href="javascript:;"></a>
+        <a href="javascript:;"></a>
+    </div>
+</ul>
+</body>
+</html>

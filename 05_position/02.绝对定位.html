@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            position: absolute;
+            /* top: 0; */
+            /* left: 0; */
+            bottom: 0;
+            right: 0;
+        }
+        /* 
+            absolute position
+                property
+                    1.turn on absolute position, location will not change unless offset a value
+                    2.element will no longer be normal flow
+                    3. will cover text as well
+                    4.will change property, inline will change to block, block space will enlarge 
+                        by content
+                    5.layer will rise above
+                    6.绝对定位元素是相对于其包含块进行定位的
+                        its absolute location is its containing block's position location
+                        包含块(containing block) ancestor block element
+
+                        absoulte position containing block:
+                            -as long as an ancestor element turn on position other than static, it
+                                will become an absolute containing block
+                            -if none of the ancestor turn on position, then its root element will be 
+                                the position containing block
+                            
+                        html(root element, original containing block)
+             
+        */
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            /* position: relative; */
+        }
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            /* position: relative; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    
+    <div class="box3">3</div>
+</body>
+</html>

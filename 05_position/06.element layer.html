@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            position: absolute;
+            /* 
+                after turn on position, use z-index to make element layer
+                    z-index need a reference, bigger number higher layer
+                    if other did not have z-index, then specified z-index will
+                    be higher
+
+                    child element can inherit ancestor z-index, so it
+                    will not be cover by its ancestor
+
+            */
+            /* z-index: 3; */
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, .3);
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /* z-index: 3; */
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            z-index: 3;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4">4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        /* setting both background color so could see the effect */
+        body{
+            background-color: #bfa;
+        }
+        .side_title{
+            background-color: white;
+            width:380px;
+            height: 484px;
+            margin: 50px auto;
+            border-top: solid grey 1px;
+        }
+        /* set the style of heading */
+        .side_heading{
+            width: 380px;
+            height: 53px;
+        }
+        /* to make heading with a red border and not changing the size of the box, 
+        and place it in similar location */
+        .heading{
+            border-top: red 2px solid;
+            margin-top: 17px;
+            font-size: 18px;
+            padding: 15px 0 22px 39px;
+            line-height: 53px;
+        }
+        /* set image */
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        a h3{
+            margin-top: -20px;
+            margin-left: 50px;
+            color: white;
+        }
+        /* set list */
+        .side_news{
+            padding-left: 13px;
+            margin-top: 17px;
+        }
+        .side_news li{
+            font-size: 17px;
+            margin-top: 19px;
+        }
+        .side_news a{
+            color: rgb(64, 64, 64);
+        }
+        li::before{
+            content: "•";
+            color: rgb(64, 64, 64);
+            margin-left: -15px;
+            margin-right: 9px;
+        }
+        /* remove underline of links */
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="side_title">
+        <h2 class="side_heading"><span class="heading">知识公路</span></h2>
+        <div class="side_image">
+            <a href="javascript">
+                <img class="side_image" src="./img/images.jpg" alt="">
+                <h3 class="image_heading">情人节不知道如何表白?这几句话绝对够用</h3>
+            </a>
+        </div>
+        <ul class="side_news">
+            <li><a href="javascript">中国2.5亿人受脱发困扰,30岁以下占7成</a></li>
+            <li><a href="javascript">埃博拉致死率达90%,为何只在非洲肆虐?</a></li>
+            <li><a href="javascript">情人节开房碰到警察查房怎么办?</a></li>
+            <li><a href="javascript">把宇宙138亿年历史,压缩到一年会怎么样</a></li>
+            <li><a href="javascript">口香糖吞下去,真的会粘住肠子吗?</a></li>
+        </ul>
+    </div>
+</body>
+</html>

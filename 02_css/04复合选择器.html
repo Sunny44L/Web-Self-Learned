@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+
+        }
+        /* 交集选择器：
+            must able to satisfied multiple condition
+                -must start with its element
+                use . and must correct
+        */
+        div.red{
+            font-size: 30px;
+        }
+        /* able to select partial of the class name and stilll work */
+        .a.b.c{
+            color: blue;
+        }
+        /* select mulltiple element that use the same value */
+        /*  , represent a and &  meaning */
+        h1, span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">one div</div>
+    <p class="red">one p</p>
+    <div class="red2 a b c">div 2</div>
+
+    <h1>title</h1>
+    <span>hahahahah</span>
+</body>
+</html> 

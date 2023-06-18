@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #box1{
+            background-color: orange;
+        }
+        div#box1{
+            background-color: yellow;
+
+        } */
+
+
+        .d1{
+            background-color: purple !important;
+        }
+
+        .red{
+            background-color: red;
+        }
+        /* 
+            style conflict:
+                -when  use different selector for same element and set as different color
+            -when style conflict, which one of selector will have higher priority    
+
+            priority
+                -inline             1,0,0,0
+                -id                 0,1,0,0
+                -class and psuedo   0,0,1,0
+                -element            0,0,0,1
+                -通配选择器 *()      0,0,0,0
+                -Heritaged          no priority
+
+            use the number to sum, the higher the combination, the higher prority
+            -the sum for similar will not exceed the next level priority
+            -if multiple style have same priority, the bottom will act, because it got covered
+            
+            Heritage style will have no priority
+
+            add a code !important at style line, this will make the line become the top priority
+                -use this at cautious, try not to use it
+        */
+        *{
+            font-size: 50px;
+        }
+        div{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="red d1 d2 d3 d4" style="background-color: chocolate;"> one div <span>a span inside div</span> here</div>
+</body>
+</html>

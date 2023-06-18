@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            border: 10px red solid;
+            /* 
+                BFC(Block Formatting Context) 块级格式化环境
+                    Is a CSS 隐含 属性, use for element to use BFC
+                        open BFC can make element into a solo unique area
+                    element property after BFC
+                        1.will not be cover by float element
+                        2.BFC will not have margin overlay of their child and father element
+                            -will not use the margin property of its child element
+                        3.can surround float element
+
+                    open BFC through special ways
+                        1.set element float
+                        2.make element into inline-block element
+                        3.set overflor into non-visible value
+                            -set overflor: hidden to open BFC, makes father element surround floated
+                                child element
+            */
+            /* float: left; */
+            /* display: inline-block; */
+            overflow: hidden;
+        }
+        .inner{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+
+            /* 
+                高度塌陷问题
+                    when float layout, the height shall be enlarge by its child element
+                        after float, its property wil no longer be 文档流, child element will
+                        leave its layer, father element will no loner be using its child 
+                        element's height.
+
+                    loosing height will result overall layout error
+            */
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

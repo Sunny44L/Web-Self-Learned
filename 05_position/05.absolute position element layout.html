@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+
+            position: relative;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            position: absolute;
+            margin: auto;
+
+            /* 
+                horizontal layout: 
+                    left + margin-left+ border-left+ padding-left+ width+ padding-right+ border-right+ margin-right+ right
+                    =containing block width
+
+                -after turn on absolute position
+                    horizontal equation needs to add left, and right two value
+                        if equation is not equal,
+                            broswer will adjust right value to make it equal
+                            even right is specified, right will still be adjust
+
+                            otherwise, auto will be adjust
+                            value can be auto 
+                            margin, width, left, right
+
+                            left, right's default are auto
+                
+                vertical layout equation
+                    top +margin-top/bottom +padding-top/bottom +border-top/botoom +height +bottom
+
+            */
+            left: 0;
+            right: 0;
+
+            top: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

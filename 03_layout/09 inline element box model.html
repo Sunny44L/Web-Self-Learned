@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .s1{
+            background-color: yellow;
+            /* 
+                inline element box model
+                    inline element can not set width and height
+                    padding can be use, but vertical padding will not effect page layout
+                    border is same 
+                    margin is the same
+            */
+            /* width: 100px;
+            height: 100px; */
+            /* padding: 10px; */
+            /* border: 100px red solid; */
+            margin: 50px;  
+            /* margin will not overlay on horizontal postion */
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+        a{
+            /* 
+                display: can set element type
+                    property
+                        inline
+                        block
+                        inline-block
+                            -able to set width and height, also does not take whole line
+                        table
+                        none not displaying
+                
+                visibility: element visible condition
+                    property
+                        visible - default
+                        hidden - hide the element, but still take the space
+            */
+            visibility:hidden;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <a href="www.google.ca">link</a>
+    <a href="www.google.ca">link</a>
+
+    <span class="s1">this iis a span</span>
+    <span class="s1">this iis a span</span>
+    
+    <div class="box1"></div>
+</body>
+</html>

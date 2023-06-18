@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            position: relative;
+            top: -200px;
+            left: 200px;
+        }
+        /* 
+            position
+                an easier method to make elements move 
+                -make block to any position
+                use position property
+                    value:
+                        static: default, position off
+                        relative 相对定位
+                        absolute 绝对定位
+                        fixed 固定定位
+                        sticky 粘滞定位
+                
+                Relative position
+                    turn on position after setting value to relative
+                    -relative position property
+                        1.after turn on relative position, if not set 偏移量, element will not change
+                        2.relative location compares to its 文档流 location 
+                        3.relative position will rise the lay, make it cover other element
+                        4.relative position remain as normal flow
+                        5.relative position will not change element's property
+                            block remain block, inline remain inline
+
+                offset(偏移量)
+                    after position, use offset to change element location
+                        top
+                        bottom
+                        left
+                        right
+        */
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

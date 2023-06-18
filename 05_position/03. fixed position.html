@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            /* 
+                fixed position(position:fixed)
+                    -one of the absolute position, mostly same as absolute position
+                        the difference
+                            it always refers to broswer's window to position
+                                instead of its containing block
+            */
+            position: fixed;
+            top: 0;
+            left: 10%;
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-color: tomato;
+            position: relative;
+        }
+        .box5{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box4">
+        4
+        <div class="box5">
+            5
+            <div class="box2">2</div>
+        </div>
+    </div>
+    
+    <div class="box3">3</div>
+</body>
+</html>

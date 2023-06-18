@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        p[title] select
+        p[title=abc] pointer
+        p[title^=abc] ^mean begin with abc
+        p[title$=abc] $ mean end with abc
+        p[title*=abc] *consist of abc
+        */
+
+        p[title*=e]{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p title="abc">红豆生南国,</p>
+    <p title="abcef">春来发几枝。</p>
+    <p title="hello">愿君多采撷,</p>
+    <p title="heabc">此物最相思.</p>
+    
+</body>
+</html>

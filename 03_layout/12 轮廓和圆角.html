@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* outline: 1px red solid; */
+
+            /* 
+                outline is similar to border
+                    outline will not change the size of box
+                    :hover will be useful together
+            */
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+            /* 
+                make a shadow effect, will not change the size of box
+                    remember, shadow is underknee, but we look from top
+
+                ( horizontall value, vertical value, shadow blur, color)
+                act like  x and y chart, - will go left and bottom
+            */
+            border-radius: 10px 50px 30px 15px;
+            /* 
+                can have value for each corner
+                    4 value: for each corner
+                    3 value: top-left, top-right & bottom left, bottom right
+                    2 value: top-left & bottom-right, top-right & bottom-left
+                value 50% is a circle
+        
+                border-top-left-radius
+                    can specify one corner radius
+                    (horzontal value, vertical value) can make a elipse
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <span>hello</span>
+    <div class="box2"></div>
+</body>
+</html>

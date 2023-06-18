@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* make the the firs li of ul to be red
+        psuedo mean a satisfied condition, not id, class, of relative
+        -regarding not element 
+        */
+        /* 
+        use for all child even they are different
+         :first-child          first one
+         :last-child           last
+         :nth-child()          select specific number 
+            special value n
+                n = 0 to infinte (include all)
+                2n or even = select 偶数 even
+                2n+1 or odd= select 基数 odd
+        */
+
+        /* 
+            these following only look for same similar
+            :first-of-type
+            :last-of-type
+            :nth-last-of-type()
+        */
+
+        /* 
+            :not( )  mean except the what it define, other will 
+        */
+        ul>li:not(:nth-of-type(3)){
+            color: yellowgreen;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <span>this is a span</span>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+        <li>fifth</li>
+    </ul>
+</body>
+</html>

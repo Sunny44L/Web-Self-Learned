@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        alternative css can put within <head>, and one attribute may change all element together, easy to maintanece
+    -->
+    <!-- <style>
+        p{
+            color: rgb(214, 203, 50);
+            font-size: 101px;
+        }
+    </style> -->
+
+    <!-- 
+        a thrid method
+            a outer style(use a outer file css file)
+            then use another element to import the css file
+            -this benefit all website, and different website may use the same style
+            -this method could use the memory of browser, and load website faster, improve users experience 
+    -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--
+        结构（html)
+        表现 (css)
+        行为(javascript)
+
+        CSS cascading style sheet
+    -->
+    <!--
+        use css to change the element of sample
+        the following is a line element
+        style is css
+        -inline attribute only effect one element
+    -->
+    <p style="color:blue; font-size: 35px;">少小离家老大回，乡音无改朔毛衰</p>
+    <p>monika</p>
+    <p>elsa</p>
+</body>
+</html>

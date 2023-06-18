@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+
+            background-color: #bfa;
+            /* 
+                make the image into background
+                    -can also set a background color is images is allow
+                    -if images is smaller than box,
+                        it duplicates
+                    -if bigger than box, it crop the images
+            */
+            background-image: url(../images/京东top\ wrapper.PNG);
+
+            /* 
+                background-repeat: make the background image repeatily fill in background
+                    -repeat-x   horizontally
+                    -repeat-y   vertically
+                    -no-repeat
+            */
+            background-repeat: no-repeat;
+
+            /* 
+                background-position: set the location of the image background
+                    -top
+                    -left
+                    -right
+                    -bottom
+                    -center         #
+                its defaults are center, if only use one, the second is center
+
+                value
+                    100px 100px
+            */
+            background-position: 200px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

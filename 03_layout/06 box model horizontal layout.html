@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 10px red solid;
+
+        }
+        .inner{
+            /* width value is set as auto as default, if not specify */
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin:0 auto;
+            /* 
+                element's horizontal layout
+                    horizontal layout uses the following
+                        -margin-left
+                        -border-left
+                        -padding-left
+                        -width
+                        -padding-right
+                        -border-right
+                        -margin-right
+                    
+                    one element inside of its father element must satisfy the following equation
+                        -margin-left+ border-left+ padding-left+ width+ padding-right+ border-right+ margin-right
+                        =equote to its father element's width (must)
+
+                        0 + 0 + 0 + 200 + 0 + 0 + 0 =800
+
+                        The following statement is for auto condition, 过度约束，only when equation is not satisfy
+                        if the equation is not satisfy, the broswer will automatically make the last number to increase to make equation satisfy
+                            -which is margin-right
+                * As result, margin-right will not be coded, because it will be automatic
+
+                        in 7 value, if there are 3 of them set as auto：
+                            width
+                            margin left
+                            margin right
+                            -as any of these set as auto, the equation will make this auto to complete equation
+
+                        If width and margin-left are set as auto, then width will be auto and margin-left will be 0
+                        if all 3 are auto, then only width will be set and other margin left and right will be 0
+                        If width is set, and both margin are auto, then both margin will be set as same number. 
+                            -therefore, we always use this function to make element to center in its father element
+                                example
+                                width: xxx px;
+                                margin: 0(mean top and bottom) auto;
+
+
+                Margin could be negative is width is exceeding its father element
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+
+    </div>
+</body>
+</html>

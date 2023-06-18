@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        select a 子元素 (span) of div for a color
+            -sign is > mean a 子元素
+        */
+
+
+        /* div.box > span{
+               color: orange; 
+        } */
+
+
+        /* 后代元素 
+            use spacebar
+        */
+        /* div span {
+            color: skyblue;
+        } */
+
+
+        /* 兄弟元素
+        only select the next one
+            -use + sign
+        select all
+            - use ~ sign
+         */
+         p ~ span{
+             color: skyblue;
+         }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        父元素
+            -include  a 子元素 inside
+         子元素
+            -element inside a element(父元素)
+         祖先元素
+            - 套娃，element that cover element inside it
+            -one 父元素is also 祖先元素
+         后代元素
+            -directly or indirectly inside of a element
+         兄弟元素
+     -->
+    <div class="box"> one of the div
+
+        <p>a p element in div
+
+            <span>a span element inside p</span>
+
+        </p>
+
+        <span>a span inside a div</span>
+        <span>a span inside a div</span>    
+        <span>a span inside a div</span>
+        <span>a span inside a div</span>
+        <span>a span inside a div</span>
+    </div>
+</body>
+</html>

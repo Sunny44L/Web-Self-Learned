@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* make server's font-family to user to use
+                problem: 
+                    1.loading speed
+                    2.copyright
+                    （有版权问题，需要下载
+        */
+        @font-face {
+            /* make a name for you font  */
+            font-family: 'my font';
+            /* url of your font-family's route 
+                format('truetype') is to tell browser the file format, may not
+                    be able to identify sometime
+            */
+            src: url('./font/SIMHEI.TTF') format('truetype');
+        }
+        p{
+            /* 字体，font type related property
+                    color, for font color
+                    font-size, 
+                        em, current element font -size
+                        rem, root element font-size
+                    font-family字体族
+                        value: 分类
+                             serif 衬线字体（加勾结尾
+                             sans-serif 非衬线字体（简洁，非加勾结尾
+                             monospace 等宽字体（宽度一等
+                                -指定字体的类别，浏览器会自动使用该类别下的字体
+
+                        -can specified multiple style, split between commas,(use quotation mark if 
+                        there is space inbetween the style), will use the first one, and move to next
+                        if broswer does not support the type
+
+                    建议使用，没有版权问题
+            */
+            color: tomato;
+            font-size: 40px;
+
+            font-family: my font;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>heelo, how are you, 好天气</p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+
+            /* border-width: 5px 15px;  */
+            /* 
+            there will be still a border-width even you do not write one, on default few pixel 
+            -if specify four value, 
+                there order are top, right, bottom, and left
+                -if only 3 value, the left will use the right's value
+                -if only 2 value, top and bottom, right and left will be group
+
+            other than border-width, there a one more code "border-xxx-width"
+                xxx can be top, right, bottom, and left
+            */
+            
+            color: red;
+            /* 
+                if there is no border color, this color wil over takes
+            */
+
+            /*  
+            border-color and border-style also have "border-xxx-"
+                -also each segment can be different, color and style
+
+            border-color can also be not specify, its default is black 
+            */
+
+
+            /* border-width: 10px;
+            border-color: gray red ;
+            border-style: solid double; */
+
+
+            /* 
+            border-style have
+                solid
+                dotted
+                dashed
+                double
+
+                its default is none, meaning no border
+        
+            */
+            /* border-width: 10px;
+            border-color: orange;
+            border-style: solid; */
+             
+            /* the simplest way of wwriting border width, color, style
+                    -other than border, there are 4 more
+                        border-top
+                        border-right
+                        border-bottom
+                        border-left
+                    use for one side only, not commonly use
+            */
+            /* border-top: 10px orange solid;
+            border-right: 10px orange solid;
+            border-left: 10px orange solid; */
+                /* one side not going to specify */
+
+            border: 10px red solid;
+            border-bottom: none;
+            /* a fast way for upper purpose */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
