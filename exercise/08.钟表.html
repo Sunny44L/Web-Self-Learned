@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clock{
+            width: 500px;
+            height: 500px;
+            background-image: url(../images/hollowknight.png);
+            border: 5px solid black;
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .hour-wrap{
+            width: 60%;
+            height: 50%;
+            /* background-color: yellow; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: clock 43200s linear;
+        }
+        .hour{
+            height: 50%;
+            width: 5px;
+            background-color: skyblue;
+            /* position: relative; */
+            margin: 0 auto ;
+            
+        }
+        .min-wrap{
+            height: 70%;
+            width: 70%;
+            /* background-color: tomato; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation: clock 3600s linear;
+        }
+        .min{
+            height: 50%;
+            width: 3px;
+            background-color: tomato;
+            margin: 0 auto;
+
+        }
+
+        .sec-wrap{
+            height: 80%;
+            width: 80%;
+            /* background-color: orange; */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: clock 60s infinite linear;
+
+        }
+        .sec{
+            height: 50%;
+            width: 2px;
+            background-color: yellowgreen;
+            margin: 0 auto;
+        }
+        @keyframes clock {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour-wrap">
+            <div class="hour"></div>
+            
+        </div>
+        <div class="min-wrap">
+            <div class="min"></div>
+        </div>
+
+        <div class="sec-wrap">
+            <div class="sec"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

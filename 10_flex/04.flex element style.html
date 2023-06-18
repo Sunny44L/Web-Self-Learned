@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 1000px;      
+            border: 10px red solid;
+            display: flex;
+        }
+        li{
+            width: 200px;     
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            
+            /* flex-grow: 1; */
+             
+            flex-shrink: ;
+
+            /* element basic length
+                element's basic width at main axis
+
+                if main axis is vertical, 
+                    then is refer to the height of the element
+
+                default is auto, refer ti width and height 
+                    sppecified in element
+            */
+            /* flex-basis: auto; */
+
+            /* 
+                all three should be in one
+                flex(grow shrink basis)
+                    initial flex: 0 1 auto
+                    auto flex: 1 1 auto
+                    none flex: 0 0 auto
+            */
+            flex: initial;
+        }
+        li:nth-child(1){
+
+            /* 
+                order, the priority alignment of element
+            */
+            order: 3;
+   
+        }
+        li:nth-child(2){
+            background-color: pink;
+            order: 2;
+           
+        }
+        li:nth-child(3){
+            background-color: yellow;    
+            order: 1;   
+        }
+ 
+    </style>
+</head>
+<body>
+     <ul>
+         <li>1</li>
+         <li>2  
+         </li>
+         <li>3
+             
+         </li>
+         
+     </ul>
+</body>
+</html>

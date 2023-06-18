@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            /* x value = to a color code */
+            --color:#bfa;
+            --length:200px;
+        }
+        /* 
+            calc() 
+                calculator
+        */
+        .box1{
+            width: calc(1000px/2);
+            height: var(--length);
+            background-color: var(--color);
+        }
+        .box2{
+            width: var(--length);
+            height: var(--length);
+            color: var(--color);
+        }
+        .box3{
+            width: var(--length);
+            height: var(--length);
+            border: 10px solid var(--color);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        less is a improved version of css
+            -use less code to have better styles
+            -gain many more specialty, more function, support mixin
+            -same syntax as css,
+            -but can not be recognize by browser, must cover to css 
+                for browser to use
+     -->
+     <div class="box1">aaa</div>
+     <div class="box2">aaa</div>
+     <div class="box3">aaa</div>
+</body>
+</html>

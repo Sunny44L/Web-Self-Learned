@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表单
+            -提供数据
+            -将本地的表单提供给服务器
+     -->
+     <!-- 
+        form element class
+            action : server's address
+      -->
+     <form action="target.html">
+         <!-- 
+             文本框 username
+             注意：数据提交到服务器中，必须为元素指定一个name属性
+        -->
+        文本框<input type="text" name="username">
+        <br><br>
+        <!-- 
+            password
+
+         -->
+        密码框<input type="password" name="password" id="">
+        <br><br>
+        <!-- 
+            单选框
+                selection bar, name must be same, so user can only 
+                select one
+
+                -checked: can make a single input into the default input
+         -->
+         单选框<input type="radio" name="hello" value="a">
+                <input type="radio" name="hello" value="b" checked>
+                <br><br>
+         <!-- 
+             multiple selection
+          -->
+        多选框<input type="checkbox" name="test" value="1">
+        <input type="checkbox" name="test" value="2" checked>
+        <input type="checkbox" name="test" value="3">
+        <br><br>
+        <!-- 
+            dropdown selection
+                selected: is the default 
+         -->
+         <select name="haha" id="">
+             <option value="i">selection 1</option>
+             <option selected value="iii">selection 2</option>
+             <option value="ii">selection 3</option>
+         </select>
+        <!-- 
+            提交按钮
+        
+         -->
+         <br><br>
+         <input type="submit" value="shea">
+     </form>
+</body>
+</html>

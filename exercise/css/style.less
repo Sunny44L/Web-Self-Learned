@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@total-width: 750;
+@multpr: 100;
+
+body .w {
+  width: 693rem;
+  margin: 0 auto;
+}
+// set root element
+html {
+  // set rem value
+  font-size: 0.13333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+
+// set header
+.top-bar:extend(body .w) {
+  display: flex;
+  height: 175rem;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: #24253d;
+    font-size: 50rem;
+    i {
+      color: #999;
+    }
+  }
+}
+
+// set banner
+.banner:extend(body .w) {
+  img {
+    width: 100%;
+  }
+}
+
+// set the center menu
+.menu:extend(body .w) {
+  height: 329rem;
+  display: flex;
+  // set to change row
+  flex-flow: row wrap;
+
+  // set horizontal alignmnet
+  justify-content: space-between;
+  // set vertical alignment
+  align-content: space-around;
+  a {
+    color: white;
+    width: 327rem;
+    height: 104rem;
+    font-size: 35rem;
+    border-radius: 15rem;
+    text-align: center;
+    line-height: 104rem;
+
+    i {
+      margin-right: 15rem;
+    }
+
+    &:nth-child(1) {
+      background-color: #f97053;
+    }
+    &:nth-child(2) {
+      background-color: #cd6cfe;
+    }
+    &:nth-child(3) {
+      background-color: #fe4479;
+    }
+    &:nth-child(4) {
+      background-color: #1bc4fb;
+    }
+  }
+}
+
+// set the course
+.lcourse:extend(body .w) {
+  height: 394rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40rem;
+
+  
+  // set title
+  .title {
+    display: flex;
+    font-size: 25rem;
+    justify-content: space-between;
+    align-items: center;
+    // title name
+    h2 {
+      color: #24253d;
+      border-left: 4rem solid #3a84ff;
+      padding-left: 15rem;
+    }
+    // more
+    a {
+      font-size: 25rem;
+      color: #656565;
+    }
+  }
+  // Course
+  .item-list {
+    width: 720rem;
+    display: flex;
+    overflow: auto;
+    // course 1
+    .item {
+      width: 320rem;
+      height: 324rem;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      margin-right: 20rem;
+
+      // course picture
+      .sunset {
+        width: 280rem;
+        margin: 0 20rem;
+        img {
+          width: 100%;
+        }
+      }
+      // course name
+      .course-title {
+        font-size: 30rem;
+        margin: 0 20rem;
+        color: #24253d;
+      }
+      // uploader
+      .by {
+        display: flex;
+        margin: 0 20rem;
+        align-items: center;
+        // uploader img
+        img {
+          width: 42rem;
+        }
+        // uploader name
+        .nickname {
+          font-size: 22rem;
+          margin-left: 15rem;
+        }
+      }
+    }
+  }
+}

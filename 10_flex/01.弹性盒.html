@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 500px;
+            border: 10px red solid;
+            /* make ul a flex container */
+            display: flex;
+
+            /* flex element layout method
+                    flex-direction:
+                        row, default(left to right)
+                        row-reverse, opposite direction
+                        column, top to bottom
+                        column-reverse,
+
+                    主轴(main)：
+                        flex element's direction layout is main
+                    侧轴:
+                        the perpendicular direction of the main
+            */
+            flex-direction: row ;
+            
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+
+            /* 
+                flex element property
+                    flex-grow
+                        -when there are extra space in the box
+                            how shall the element fit in
+                        -0 is default, not to fill
+                        -at ratio, how much of extra space the element should take
+
+                    flex-shrink
+                        -when container does not have enought space,
+                            how should the element shrink into
+
+                        -0, default not to shrink
+            */
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+        }
+        li:nth-child(1){
+            flex-grow: 0;
+            /* flex-shrink: 0; */
+        }
+        li:nth-child(2){
+            background-color: pink;
+            /* flex-grow: 2; */
+            /* flex-shrink: 0; */
+        }
+        li:nth-child(3){
+            background-color: yellow;
+            /* flex-grow: 3; */
+            /* flex-shrink: 0; */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        flex(弹性盒，伸缩盒)
+            -a better way for layout compares to flow
+            -flex makes the box flexible, element change size according
+                to viewport size
+
+            -flex container
+                -must make a flexible container
+                -through display
+                    -display: flex
+                    -display:inline flex
+
+            -flex element
+                -flex container's child element is flex element
+                    (only child element, not offspring element)
+                -a element can be flex element and a flex container
+            
+     -->
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

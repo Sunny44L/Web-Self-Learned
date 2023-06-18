@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            display: block;
+            width: 195px;
+            height: 40px;
+            background-color: transparent;
+            background-image: url(../images/3\ in\ 1.png);
+        }
+        a:hover{
+            background-position: 400 0;
+        }
+        a:active{
+            background-position: 200 0;
+        }
+
+        /* 
+            CSS-Sprite
+            to solve image flash load problem, make multiple image in one, 
+            and use background position
+                to change its location
+
+
+            Sprite image usage steps
+                1.find the location of your image
+                2.measure the size of the image
+                3.create the element in that size
+                4.set the image as background image
+                5.set the postion of the image
+        */
+        .box1{
+            width: 85px;
+            height: 80px;
+            background-image: url(../images/hollowknight.png);
+        }
+        .box2{
+            width: 70px;
+            height: 60px;
+            background-image: url(../images/hollowknight.png);
+            background-position: -890px -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+    <div class="box2"></div>
+    <a href="javascript:;"></a>
+</body>
+</html>

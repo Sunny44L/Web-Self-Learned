@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+        }
+        .box2{
+            background-color: #bfa;
+            /* set a name for box2
+                    which is "test"
+                animation-name
+
+                the rest is similar to transition
+            */
+            animation-name: test;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+
+            /* animation-iteration-count
+                    number of time this animation will do
+
+                    value；
+                    -number
+                    -infinite
+            */
+            animation-iteration-count: 3;
+            
+            /* animation-direction 
+                    value
+                    -normal: default
+                    -reverse: opossite
+                    -alternate: run a normal, then reverse it
+                    -alternate-reverse: run a reverser, then normal
+            */
+            animation-direction: normal;
+
+            /* animation-play-state 
+                    value
+                    -running
+                    -paused: use it on hover to paused the animation
+            */
+            animation-play-state: running;
+
+            /* animation-fill-mode 
+                    value
+                    -none: default, back to from keyframe after animation
+                    -forwards: stop at the to keyframe
+                    -backwards: when element delay, element will set as the 
+                            beginning style
+                    -both:combine forwards and backwards
+            */
+            animation-fill-mode: backwards;
+
+            /* all in one */
+            animation: test 2s 2 1s alternate;
+            
+        }
+        .box3{
+            background-color: orange;
+            transition: margin-left 1s 2s;
+        }
+        /* .box1:hover div{
+          
+            margin-left: 700px;
+        } */
+
+
+        /* animation 
+                trigger automatically, no need to hover
+
+            key frame
+        */
+        @keyframes test{
+            /* from or 0% is the begin frame */
+            from{
+                margin-left: 0;
+                background-color: #bfa;
+            }
+            /* to or 100% is the ending frame */
+            to{
+                margin-left: 700px;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>

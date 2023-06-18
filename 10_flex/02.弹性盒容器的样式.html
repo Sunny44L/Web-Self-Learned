@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 800px;
+            border: 10px red solid;
+            display: flex;
+            /* flex-direction: column; */
+
+            /* 
+                flex-wrap:
+                    set the element to change line or not
+                    
+                        nowrap, default, does not change to next line
+                        wrap, element align at their sub axis, then change line
+                        wrap-reverse, element align at there sub axis but go up when full
+            */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row wrap; */
+            /* it to combine flex-direction & dlex-wrap */
+
+            /* 
+                justify content(how the element on main axis align)
+                    value
+                        -flex-start, element align with main axis
+                        -flex-end, element start from end of main axis
+                        -center, set as center
+                        -space-around, space in spread both side of each element
+                        -space-between, space in between
+                        -space-evenly, space on one side spread evenly 
+            */
+            /* justify-content: space-evenly ;  */
+        }
+        li{
+            width: 200px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink: 0;
+
+            
+        
+        }
+        li:nth-child(1){
+        
+            
+        }
+        li:nth-child(2){
+            background-color: pink;
+           
+        }
+        li:nth-child(3){
+            background-color: yellow;
+            
+        }
+    </style>
+</head>
+<body>
+   
+ 
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

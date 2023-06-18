@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            /* 
+                seems like older browser does not support font size 
+                 smaller than 12px
+
+                 therfore: make 0.1333333333vw convert to 
+                                13.33333333vw
+                                and make the specified rem to 
+                                dividded by 100
+            */
+            font-size: .133333333333333vw;
+        }
+        .box1{
+            /* 
+                rem
+                    -1 rem = 1 html font size
+
+                    html{
+                        specify what the font size equal to
+                        1 css pixel = 0.133333333333vw
+                    }
+            */
+            width: 750rem;
+            height: 36rem;
+            background-color: #bfa;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        create mobile website, but the designer pages are in px
+            but coding is in vw(percentage)
+
+     -->
+     <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.box1{
+    .box2{
+        color: red;
+    }
+    >.box3{
+        color: blue;
+
+        &:hover{
+            color: yellow;
+        }
+    }
+    // set a hover for box1
+    // & sign is the father element which is box1
+    &:hover{
+        color: orange;
+    }
+}
+
+.p1{
+    width: 100px;
+    height: 200px;
+}
+// extend, use previous style and have more of one
+.p2:extend(.p1){
+    color: red;
+}
+
+.p3{
+    // another extend
+
+    // miixin, place the p1 style into the p3
+
+    // will prefer the first one, 
+    .p1();
+}
+
+// psuedo selector, adding a (), will make it into a mixin,
+// use to be place by other selector
+.p4(){
+    width: 100px;
+    height: 100px;
+    background-color: #bfa;
+}
+
+.p5{
+    .p4;
+}
+
+// mixed variable
+// .test(@w,@h,@bgc){
+//     width: @w;
+//     height: @h;
+//     border: 1px solid @bgc;
+// }
+.test(@w:100px,@h:200px,@bgc:#bfa){
+    width: @w;
+    height: @h;
+    border: 1px solid @bgc;
+}
+div{
+    // use the above code, so we could simplify the next coding
+    // with just writing the following in brakect
+    // .test(200px,300px,#bfa);
+
+    // alternative way
+    // .test(@w:100px,@h:200px,@bgc:red);
+    .test();
+}
+
+span{
+    // average use for color average in between
+    color: average(red,yellow);
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+    &:hover{
+        color: darken(#bfa,10%);
+    }
+}

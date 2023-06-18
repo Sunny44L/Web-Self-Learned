@@ -1,0 +1,53 @@
+//is the text will not be shown
+
+//is only one line
+/*
+        css one
+*/
+.box1{
+    background-color: #bfa;
+    .box2{
+        background-color: yellowgreen;
+        .box4{
+            color: red;
+        }
+    }
+
+    .box3{
+        background-color: orange;
+    }
+}
+// 变量， 任意一个值
+// and change the variable when needed
+@a:100px;
+@b:#bfa;
+@c:box6;
+
+.box5{
+    // when using variable, use @ ahead 
+    width: @a;
+    color: @b;
+}
+
+.@{c}{
+    // when use it as a name,
+    width: @a;
+    background-image: url("@{c}/1.jpg");
+}
+.box6{
+    width: @d;
+}
+@d:200px;
+@d:300px;
+
+div{
+    // when there are two variable, it will choose the latest one
+    width: @d;
+    height: @e;
+}
+@e:335px;
+
+div{
+    width: 300px;
+    height: $width;
+}

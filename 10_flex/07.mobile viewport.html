@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- initial-scale=1.0 mean the same as device-width -->
+
+
+    <!-- set the size of viewport, device-width is the perfect ratio-->
+    <!-- <meta name="viewport" content="width=device-width"> -->
+
+    <!-- 100 css :750px (size of mobile with)-->
+    <!-- 200css : 750px -->
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        default viewport on mobile is 980px
+            ratio of pixel 980/mobile width
+            write code directly on website, result in creating small
+                scale content
+            when creating mobile website, make sure to have a reasonable
+                ratio
+                1 css to 2 physical
+
+        Every mobile device has a best ratio, 
+            we only need to find such
+     -->
+    <div class="box1"></div>
+</body>
+</html>

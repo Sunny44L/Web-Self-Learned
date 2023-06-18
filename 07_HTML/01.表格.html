@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        create table
+
+     -->
+     <table border="1" width="20%">
+         <!-- 
+             tr:row
+             td:one grid
+          -->
+         <tr>
+             <td>a1</td>
+             <td>a1</td>
+             <!-- rowspan: take up to number of grid defined vertically -->
+             <td rowspan="2">a1</td>
+         </tr>
+         <tr>
+            <td>b1</td>
+            <td>b1</td>
+            <!-- <td>b1</td> -->
+        </tr>
+        <tr>
+            <td>c1</td>
+            <!-- colspan: take up to number of grid defined horizontally-->
+            <td colspan="2">c1</td>
+            <!-- <td>c1</td> -->
+        </tr>
+     </table>
+</body>
+</html>

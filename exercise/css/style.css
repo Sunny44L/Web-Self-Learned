@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body .w,
+.top-bar,
+.banner,
+.menu,
+.lcourse {
+  width: 693rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 0.13333333vw;
+  background-color: #eff0f4;
+}
+a {
+  text-decoration: none;
+}
+.top-bar {
+  display: flex;
+  height: 175rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar a {
+  color: #24253d;
+  font-size: 50rem;
+}
+.top-bar a i {
+  color: #999;
+}
+.banner img {
+  width: 100%;
+}
+.menu {
+  height: 329rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.menu a {
+  color: white;
+  width: 327rem;
+  height: 104rem;
+  font-size: 35rem;
+  border-radius: 15rem;
+  text-align: center;
+  line-height: 104rem;
+}
+.menu a i {
+  margin-right: 15rem;
+}
+.menu a:nth-child(1) {
+  background-color: #f97053;
+}
+.menu a:nth-child(2) {
+  background-color: #cd6cfe;
+}
+.menu a:nth-child(3) {
+  background-color: #fe4479;
+}
+.menu a:nth-child(4) {
+  background-color: #1bc4fb;
+}
+.lcourse {
+  height: 394rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40rem;
+}
+.lcourse .title {
+  display: flex;
+  font-size: 25rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.lcourse .title h2 {
+  color: #24253d;
+  border-left: 4rem solid #3a84ff;
+  padding-left: 15rem;
+}
+.lcourse .title a {
+  font-size: 25rem;
+  color: #656565;
+}
+.lcourse .item-list {
+  width: 720rem;
+  display: flex;
+  overflow: auto;
+}
+.lcourse .item-list .item {
+  width: 320rem;
+  height: 324rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 20rem;
+}
+.lcourse .item-list .item .sunset {
+  width: 280rem;
+  margin: 0 20rem;
+}
+.lcourse .item-list .item .sunset img {
+  width: 100%;
+}
+.lcourse .item-list .item .course-title {
+  font-size: 30rem;
+  margin: 0 20rem;
+  color: #24253d;
+}
+.lcourse .item-list .item .by {
+  display: flex;
+  margin: 0 20rem;
+  align-items: center;
+}
+.lcourse .item-list .item .by img {
+  width: 42rem;
+}
+.lcourse .item-list .item .by .nickname {
+  font-size: 22rem;
+  margin-left: 15rem;
+}
+/*# sourceMappingURL=./style.css.map */

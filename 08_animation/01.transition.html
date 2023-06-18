@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+            overflow: hidden;
+        }
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+        }
+        .box2{
+            background-color: #bfa;
+            margin-left: 0px;
+            /* transition: all 2s; */
+            /* 
+                Transition
+                    -when the element have change, the way 
+                        of element transform 
+                    -use to create good effect
+
+                
+            */
+
+            /* transition-property: The style that needs to be change; 
+                use commas to separate multiple style
+                use all for every style
+
+                as long as calculatable, element can be change
+                specific value is need(auto can not work)
+
+            */
+            transition-property: all;
+
+            /* transition-duration: time needs to take; 
+                                unit s, ms(mili second)
+                            
+                                multiple value, matches multiple style
+            */
+            transition-duration: 2s;
+
+            /* transition-timing-function: ;
+                    slectable
+                        ease: default, start slowing, accerlarate, then slow again
+                        linear: steady speed
+                        ease-in: slow to fast
+                        ease-out: fast to slow
+                        ease-in-out: fast, slow, fast.(similar to ease
+                                    but speed is different)
+
+                        cubic-bezier():use to customize your own 
+                                    speed graph
+
+                        steps(second, start): frame per second?
+                                        -start; mean move at the beginning of second
+            */
+            transition-timing-function: steps(3,start);
+            /* transition-delay: ; 
+                    wait the specified value then start
+            */
+            transition-delay: .2s;
+
+            
+        }
+        .box3{
+            background-color: orange;
+            transition: margin-left 1s 2s;
+        }
+        .box1:hover div{
+            /* width: 200px;
+            height: 200px;
+            background-color: purple; */
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

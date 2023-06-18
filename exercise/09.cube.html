@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            perspective: 800px;
+        }
+
+        .cube{
+            width: 256px;
+            height: 256px;
+            /* background-color: #bfa; */
+            margin: 150px auto;
+
+            
+
+            /* this setting is needed to transform the box as 3d as it is */
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateZ(45deg);
+
+            animation: rotate 20s;
+        }
+        .cube div{
+            height: 256px;
+            width: 256px;
+
+            /* half transparent effect */
+            opacity: .7;
+
+            position: absolute;
+        }
+        .cube div img{
+            vertical-align: top;
+        }
+
+        .img1{
+            transform: rotateY(90deg) translateZ(128px);
+        }
+        .img2{
+            transform: rotateY(-90deg) translateZ(128px);
+        }
+        .img3{
+            transform: rotateX(90deg) translateZ(128px) ;
+        }
+        .img4{
+            transform: rotateX(-90deg) translateZ(128px) ;
+        }
+        .img5{
+            transform: rotateY(0) translateZ(128px);
+        }
+        .img6{
+            transform: rotateY(-180deg) translateZ(128px);
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+            to{
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="img1">
+            <img src="./img/1.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="./img/2.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="./img/3.jpg" alt="">
+        </div>
+        <div class="img4">
+            <img src="./img/4.jpg" alt="">
+        </div>
+        <div class="img5">
+            <img src="./img/5.jpg" alt="">
+        </div>
+        <div class="img6">
+            <img src="./img/6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
