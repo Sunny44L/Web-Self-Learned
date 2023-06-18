@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            let user enter a number, determine if the number can be
+            divide /, to as a whole number, if the number can only be divide
+            by 1 and itself, (does not include number bigger than itself) 
+            then it is 质数(prime number)
+        */
+        var num = prompt('Enter your number:');
+
+        if(num<1){
+            alert('this number is not valid!');
+        }else{
+            //create a variable to save current number
+            var flag = true;
+
+            //see if the number is 质数
+            //divide from 2 in between num's number
+            for(var i=2; i<num; i++){
+                //console.log(i);
+                //got the numbers inbetween number from 2
+                if(num % i ==0){
+                    //if num can be divide, then it is not a 质数
+                    //set the flag as false;
+                    flag = false;
+                }
+            }
+            //if number is prime number
+            if(flag){
+                alert(num + ' is a prime number.');
+            }else{
+                alert(num + ' is not a prime number.');
+            }
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            set a function to check is the number a even number
+        */
+
+        function isEven(num){
+           return num % 2 == 0;
+        }
+
+        var result = isEven(6);
+
+        console.log('resulte = ' + result);
+
+        /* 
+            Second part
+            use the radius of  a circle to calculate the surface area
+            3.14 * r * r
+        */
+
+        function area(r){
+            return 3.14 * r * r
+        }
+
+        result = area(4);
+
+        console.log('result = ' + result);
+
+        /* 
+            set afunction to output a person's info
+            name, age, gender, address
+
+            set the parameter as the object
+        */
+
+        function sayHello(o){
+            //console.log('o = ' + o);
+            console.log('我是'+o.name+", 今年我"+o.age+"岁了， "+"我是一个"+o.gender+"人， "+", 我住在"+o.address);
+        }
+        
+        //sayHello('孙悟空',28, "男","花果山");
+
+        var obj ={
+            name:'孙悟空', age: 28, gender:'男', address:'花果山'
+        }
+
+        //sayHello(obj);
+
+        /* 
+            parameter can be object, and also can a another function
+        */
+
+        function fun(a){
+            console.log("a = "+a);
+            //this following code probably set the parameter
+            
+            
+            //a(obj);
+
+            /*
+                the logic flow, 
+                    process fun(sayHello),
+                    a = a() = sayHello() = sayHello(o), prameter undefined
+                    a(obj), (obj) was one of the variable object,
+                    a(obj) = sayHello(obj)
+
+            */
+        }
+        //fun(sayHello);
+        
+        //fun(function(){alert('hello')});
+
+        //fun(area);
+        /* 
+            area()
+            - use function
+            - this will bascically run the code, and get its result
+            - bracket mean its a function
+            area
+            -function object
+            -this will copy the code and paste
+            -without bracket mean is a object
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

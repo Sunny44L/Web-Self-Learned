@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            self-add or self-minus operator
+            ++ and --
+                -it will add 1 of its original number
+                -can have two form, a++ or ++a
+                    both will add 1
+                    -the different is 
+                        a++ = 1 ++
+                        when output a++, result is 1
+                        ++a = ++1
+                        when output ++a, result is 2
+
+
+            result, d++ will not do the self add,( its original value)
+                ++d will do the self add    (the new value)
+
+            self minus --
+                also a--, and --a
+                -they work the same as a++ and ++a
+
+
+
+        */
+
+        var num = 10;
+        console.log(num--);
+
+        console.log('num = '+ num);
+
+
+
+
+
+       var a =1;
+       
+        // let  a self add, no need for an equation
+       /* a++;
+        a++; //3
+        a++; //4 */
+
+      /*   ++a;
+        ++a; */
+
+        // console.log('++a = ' + ++a); //answer is 1
+        console.log('a++ = ' + a++); //answer is 1
+
+
+       console.log('a = '+a);
+
+       var c =10;
+
+       console.log(c++); // althoug this answer is 10, but i will still
+                        // work of its function, after this line, 
+                        //new result is 11
+       console.log(c);
+
+
+
+       var d =20;
+        // 20(then add itself become 21,) + (because 21 have add 1 again, which is 22)22 + 22
+    //    var result = d++ + ++d +d;
+
+        /* 
+            this following remain as 20, because e still equates to 20, not 20 +1.
+                -meaning, it did not process the calculation
+        */
+        /* var e = d++;
+        d = e; */
+
+        d = d++;
+
+
+       console.log("d = " +d);
+
+
+
+       var g = 10;
+       var e = g++;
+       console.log('g=' + g);
+       console.log('e=' + e);
+       /* 
+            result is g had plus 1, and e did not
+       */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            insert 3 number, then list them in order
+
+            prompt()函数 only output string
+        */
+        var num1 = +prompt("Enter your first number:"),
+            num2 = +prompt('Enter your second number:'),
+            num3 = +prompt('Enter your third number:');
+
+        if(num1 > num2 && num1 > num3 && num2 > num3){
+            alert('the order is ' + num3 +' '+ num2 + ' '+ num1);
+        }else if(num1 > num2 && num1 >num3 && num3 >num2){
+            alert('the order is ' + num2 +' '+  num3 + ' '+ num1);
+        }else if(num2 > num1 && num2 > num3 && num1 >num3){
+            alert('the order is '+ num3 + ' '+ num1 + ' '+ num2);
+        }else if(num2 >num1 && num2 > num3 && num3 > num1){
+            alert('the order is ' + num1 + ' '+ num3 + ' '+ num2);
+        }else if(num3 >num1 && num3 > num2 && num1 > num2){
+            alert('the order is '+ num2 + ' '+ num1 + ' '+ num3);
+        }else{
+            alert('the order is '+ num1 + ' '+ num2 +' '+  num3);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

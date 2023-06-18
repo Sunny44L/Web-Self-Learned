@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            three condition for marry:
+                height: taller than 180cm, rich: 10mil or above in bank, Face; 500 rating or above
+                All satisfy: must marry him
+                one satisfy: marry, better than nothing, but not the best
+                none: not marry
+        */
+        var height = prompt('Enter your height in cm'),
+            money = prompt('Enter your saving'),
+            face = prompt('enter you rating of face');
+
+        if(height > 180 && money > 10000000 && face > 500){
+            alert('Must marry him');
+        }else if(height > 180 || money > 10000000 || face >500){
+            alert('yeah, not bad, could be better, marry him');
+        }else{
+            alert('nope, not marry him');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

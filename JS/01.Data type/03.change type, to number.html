@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            change data type to number
+                
+                Method 1
+                    Number()函数
+                        -when turn non digit to number
+                        resulte is NaN
+                        -as long as it consist of non number
+                        is all NaN
+                        -empty "", will be 0
+
+                        -boolean to number
+                            true = 1
+                            false = 0
+
+                        -Null 
+                            null = 0
+
+                        -undefined
+                            undefined = NaN
+
+
+                Method 2
+                    - use especially for string with word and numbers
+                    -parseInt() take the string into interger
+                    -parseFloat() take the string into decimal number
+
+                    parseInt()
+                        -take only the number in the string
+                        -takes whole number only
+                        -direction from left to right, start from
+                            digit and end with digit
+                            123px = 123
+                            b123px = NaN
+                            123.456px= 123
+
+                        -one of the method to rounding numbers
+                    
+                    parseFloat();
+                        -work the same, but also decimal
+
+                        -123.456.789px = 123.456
+
+                -If use parseInt() or parseFloat() to Boolean and 
+                    Undefined, it will be a NaN
+                    -becuase ir work from string to number directly
+
+
+
+        */
+
+        var a = '';
+
+        a = Number(a);
+
+        a = true;
+        a =Number(a);
+
+        a = null;
+        a = Number(a);
+
+        a= undefined;
+        a = Number(a);
+
+        a = '123px';
+        a = parseInt(a);
+
+        a = '123.456px';
+        a = parseFloat(a);
+
+        console.log(typeof a);
+        console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

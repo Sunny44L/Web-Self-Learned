@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            3 types of logic operator
+
+            !  (NOT) turn true into false, false into true
+                -use ! to turn a Boolean into the opposite one
+                -when use !! will not change the boolean value
+                -!a turn the value into Boolean, then takes the opposite
+                    -use this 
+
+                It is like the NOT of electric board
+
+            && (AND)
+                -&&, combine two data and see both as one result
+                -rule, 
+                    -as long as one false in two data, result is false
+                    -only when both are true, the result is true
+
+                -in this function it will look for false, when false
+                    is discover, it will not process the next one to
+                    look for false
+
+                It is like the AND in the electric board
+
+
+            || OR
+                -||, as long as one true, it will be true, 
+                -opposite to AND gate
+                -in this function it will look for true, when true
+                    is discover, it will not process the next one to
+                    look for true
+
+                It is like the OR in the electric board
+
+
+        */
+            // NOT
+        var a =false;
+        // a= !a;
+
+        a = !!a;
+
+        // console.log('a = '+a);
+
+        var b= 10;//boolean of this is true
+        // b = !b;//this turn true into false
+        b = !!b;
+
+
+        console.log('b = '+ b);
+        console.log(typeof b);
+
+
+
+        //AND
+        var result = true && true;
+        result = true && false;
+        result = false && false;
+
+        console.log('result = ' + result);
+
+
+        //OR
+        result = false || false;
+        result = true || true;
+        result = false || true;
+
+        console.log('result = ' + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            && || non boolean situation
+                -when calculating non boolean data
+                    will turn data into boolean then calculate, and return to ints original value
+
+                && AND(look for false)
+                - as long a first one is true, it will result the second one
+                - first one false, then display false
+
+                || OR(look for true)
+                - as long a first one is false, it will result the second one
+                - first one true, then display true
+
+        */
+
+        // && AND 
+        //when both are true, take the one behind
+        var result = 2 && 1;
+
+        // it looks for false, this case is result is 0
+        result = 0 && 1;
+
+        //it looks for false only, from left to right, as long as false is found 
+        // it wont look for next one
+
+        result = null && 0;
+
+
+        console.log('result = ' + result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            creating a object
+            var obj = new Object();
+
+            too long
+        */
+        // while this way is faster
+        var obj = {};
+
+        //console.log(obj);
+
+        obj.name = 'wukong';
+
+        /* 
+            set element value directly when creating object
+            syntax
+                {element name:element value, element name:element value...}
+                -you can add"" at the 'name'
+                    -not recommand doint it
+                    -but use it on special name like @!$%^
+
+            element name and element value is a set
+                element name and value use: to seperate, and use , to seperate 
+                    between element, if there is not more new element then 
+                    dont write,,
+        */
+       var obj2 ={
+           name:'bajie',
+           age:28, 
+           gender:'male',
+           test:{name:'heshang'}
+        };
+
+       console.log(obj2.test);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

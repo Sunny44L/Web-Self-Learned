@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            调用toString()方法
+            change data to string
+             toString()
+        */
+       var a = 123;
+       /* 
+            syntax
+                .toString()
+       */
+
+        /* 
+            the following method work, because its goes from right
+                to left, in word, a.toSting() is given back to a,
+        */
+        var a = a.toString();
+
+        // error
+        a = null;
+        // a = a.toString();
+
+        // error
+        a = undefined;
+        // a = a.toString();
+
+        /* 
+            null and undefined does not work with toString()
+            -error will be display
+        */
+
+
+        /* 
+            method two, 调用String()函数
+
+            -this method work for null, and undefined,
+            -number and boolean use .toString()
+            -null and undefined use String()
+                -meant it just add " null " in them
+
+        */
+
+        a = 123;
+        // a = String(a);
+
+        a = null;
+
+        // a = String(a);
+        
+        a = undefined;
+        a = String(a);
+
+        console.log(typeof a);
+        console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            一元 运算符 unary operator
+                +a
+                    -this code will not have any affect
+                -a
+                    -turn into negative
+
+                use these onto non number data, in theory, it works
+                    same as Number()函数, but the easier way
+
+                use + sign onto +"2", can turn directly into number
+                    during a equation
+                    ex. a = 1 + +'2' +3;
+                        answer = 6
+
+            binary operator is:
+                result = 3 - '1'
+        */
+       var a = 123;
+       a = -a;
+       a = true;
+       a = 18;
+       a = +a;
+       /* console.log('a = '+ a);
+       console.log(typeof a); */
+
+       var result = 1 + +'2' + 3;
+       console.log('result =' +result);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        /*
+            create a object
+        */
+       var obj = new Object();
+        
+       //create element in an object
+       obj.name = '孙悟空';
+       obj.age = 18;
+
+       //object element value can be any data, can also be function
+       obj.sayName = function(){
+            console.log(obj.name);
+       };
+
+       function fun(){
+            console.log(obj.name);
+       };
+
+       //console.log(obj.sayName);
+
+       /*
+            first one is use method,
+       */
+       obj.sayName();
+       //this is use function
+       fun();
+
+       /*
+            function can also be call as object element
+                -if function was saved as a object element,
+                then we call this function is the object method,
+                use this function is the method of this object
+
+            but they are just name difference, 
+
+       */
+        var obj2 = {
+            name:'猪八戒',
+            age:18,
+            sayName:function(){
+                console.log(obj2.name);
+            }
+        };
+
+
+        obj2.sayName();
+       /* 
+        this is also method of console and document
+        
+       console.log
+       document.write */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

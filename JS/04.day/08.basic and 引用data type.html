@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            basic data type
+            String Number Boolean Null Undefined
+
+            引用数据类型
+            Object
+
+            JS's variable are save in stack memory
+            basic data type are save in stack memory
+
+            in stack memory:
+            variable b is copy var a's value, then variable a have no
+                relation to variable b
+                -changing variable a does not effect variable b
+
+            in heap memory
+            object is ave in heap memory
+                -when creating a new object, then new area is created in
+                    heap memory, and the variable will save the address
+                    of this heap area
+                -therefore, new element value is saved in heap memory
+                -if new variable obj2 is = to obj1, the obj2 will copy the
+                address of obj1 
+
+            -due to Object save address instead of value, 
+                -when both obj3 and obj4 = to 'heshang'
+                    but == show they do not =
+        */
+       var a = 123;
+       var b = a;
+       a++;
+
+      /*  console.log('a =' +a);
+       console.log('b =' +b); */
+
+       var obj = new Object();
+       obj.name ='wukong';
+
+       var obj2 = obj;
+
+       //change object' name  element
+       obj.name ='bajie';
+
+       /* console.log(obj.name);
+       console.log(obj2.name); */
+
+       var obj3 = new Object();
+       var obj4 = new Object();
+       obj3.name = 'heshang';
+       obj4.name = 'heshang';
+       
+       console.log(obj3 == obj4);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

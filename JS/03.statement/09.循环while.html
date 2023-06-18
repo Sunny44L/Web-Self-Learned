@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       /* 
+        output consecutive number in website
+       */
+        var n = 1;
+        document.write(n++ + '<br>');
+        document.write(n++ + '<br>');
+        document.write(n++ + '<br>');
+
+
+        /* 
+            while is the loop of JS
+                repeat over and over
+
+            syntax
+
+            while(条件表达式){
+                statement
+            }
+
+            -while process:
+                compare to the condition,
+                    if true then start to repeat the code,
+
+
+            do{
+                 statement;
+            }while(condition);
+
+            -process, ouput the code first, then check the condition,
+                if true then continue to repeat
+                if false then stop
+
+
+            There different to the check the condition first or at the end
+                -do...while will process at least once
+        */
+        var a = 1;
+
+        /* 
+            these are dead loop, mean it can not get out of loop
+                -only stop when you close the website
+
+            break use to stop loop
+        */
+        /* while(true){
+            alert(a++);
+            if(a == 10){
+                break;
+            }
+            
+        } */
+
+        //1 create a varible to begin
+
+        //2 during the repeat, set a statement/condition
+        //this condition can stop when the condition not serve
+            /* while(a < 100){
+                document.write(a++ + '<br>');
+                //3. renew your condition each repeat
+                a++;
+            }
+        // */
+
+        do{
+            document.write(n++ +'<br>');
+        }while(n < 100);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

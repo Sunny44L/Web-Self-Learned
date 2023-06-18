@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // turn number into string,  .toString()
+        var a1=10;
+        var a2=a1.toString();
+        console.log(a1);
+        console.log(typeof a2);
+
+        // String(variable)
+        console.log(String(a1));
+
+        // combine a string
+        // the most common way
+        console.log(a1 + '');
+
+
+        /* 
+           change string to number
+        */
+       var num = prompt("your age?");
+       //parseInt = interger
+       console.log(parseInt(num));
+
+       //this function only works wil whole number
+       console.log(parseInt('3.14'));
+       //will remove the px
+       console.log(parseInt('120px'));
+       //can only start with number
+       console.log(parseInt('em120px'));//error, Nan
+
+
+       //2. parseFloat(1.22), can have decimal
+       console.log(parseFloat('3.14'));
+
+       //3. Number()
+       var str = '123';
+       console.log(Number(str));
+       console.log(Number('32'));
+
+       //4. equation sign, / *  -
+       console.log('33' - 3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

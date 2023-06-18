@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* 
+            to test efficiency
+            the folowing is a timer, to begin
+            console.time('timer name')
+        */
+
+       console.time('test');
+        /* 
+            12 929ms with 100 000 times,with break off
+            1176 ms with 100 000times, break on
+        */
+        for(var num = 2; num <=100000; num++){
+            var flag=true;
+
+            
+            for(var i =2;i<=Math.sqrt(num);i++){
+                
+                if(num%i ==0){
+                    /* 
+                        in term of efficiency, if loop had enter this situation
+                            already know that this number is not a prime number
+                            we can use break to stop this current loop, so it 
+                            does not continue to calculate this loop.
+
+                            increase efficiency
+
+                    */
+                    flag=false;
+                    //then use break
+                    break;
+
+                    //turn off break 134ms
+                    
+                    //turn on break 16ms
+
+                    //display the console and turn off on break
+                //34ms
+                //27ms
+                //not displaying the console
+                //3.9ms
+                //1.9ms
+                    
+                }
+            }
+            if(flag){
+                //console.log(num);
+            }
+            
+        }
+        console.timeEnd('test'); 
+        /* 
+            to end the timer
+            console.timeEnd('timer name')
+        */
+
+
+
+        /* 
+            part 2, remember, 36
+            36:possible multiply
+            1 36
+            2 28
+            3 12
+            4 9
+            6 6
+
+            this are starting to repeat, i
+            result is when square root of 36, which is 6, and beyond are no longer 
+            need to calculate, since they will repeat
+        */
+        /* var result=Math.sqrt(4);
+        console.log(81);*/
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            alert('function is goning to run~~~');
+
+            for(var i=0 ; i<5; i++){
+                
+                if(i == 2){
+
+                    //stop the current loop
+                    //break;
+
+                    //skip the current
+                    //continue;
+
+
+                    //end the whole function
+                    return;
+                }
+                console.log(i);
+            }
+
+            alert('function is finish running~~~');
+        }
+        //fun();
+
+
+        /* 
+            return value can a any data type
+            also can a an object, also can an object
+        */
+        function fun2(){
+            //var obj = {name: '山河上'};
+            return {name: '山河上'};
+        }
+        var a = fun2();
+        //console.log("a = "+a);
+
+        function fun3(){
+            function fun4(){
+                alert('我是fun4');
+            }
+            //let fun4 function as a return value then return
+            //basically copy paste the code as return,
+            return fun4;
+            //() bracket mean ti return fun4, there is nothing in parameter
+                //therefore, is undefined
+        }
+
+        //
+        a = fun3();
+        
+        //display the code of fun4
+        console.log(a);
+        //this following code will mean it to run as function, since is a = fun3()
+        //a();
+
+
+        /* 
+            fun3() copy paste the fun4, will not pop alert
+            fun3()() directly run fun4, will pop the alert
+
+            fun3(), result in return value of fun4,
+            fun3()(), mean fun4(), therforem it will run fun4, and alert pop up
+
+
+        */
+        fun3()();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

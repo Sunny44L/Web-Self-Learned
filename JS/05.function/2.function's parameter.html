@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            create a function that add the sum of two numbers
+             -can use the ( )l in function or more parameter
+             -use , to separate parameter, statement parameter is like state the 
+                variable 
+            -but do not have a value 
+        */
+        
+        function sum (a,b){
+            console.log('a = ' + a);
+            console.log('b = ' + b);
+            console.log(a + b);
+        }
+
+        /* 
+            when using function, can set value at () for variable
+                实参将会赋值给函数中对应的形参
+
+            函数的实参可以是任意的数据类型
+        */
+        /* sum(1,2);
+        sum(123,456); */
+
+        /* 
+            调用函数是解释器不会检查实参的类型
+                所以要注意，是否可能接受非法参数，如果有可能测需要对参数进行类型检查
+        */
+
+        //sum(123, 'hello');
+        //sum(true, false);
+
+        /* 
+            调用函数是，解释器也不会检查实参的数量
+            多余实参不会被赋值
+            如果实参数量少于形参的数量，则没有对应实参的形参将是undefined
+
+
+        */
+       //sum(123,456,'hello',true, null);
+
+       sum(123);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

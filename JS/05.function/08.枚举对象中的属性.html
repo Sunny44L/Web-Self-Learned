@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //枚举，enumeration
+
+        var obj = {
+            name:'孙悟空',
+            age:18,
+            gender:'男',
+            address:'花果山'
+        };
+
+        /*
+            when there are object created, but we dont know how many or what element was created
+                within the object, we use 枚举 enumerate, take all the element within the object
+        */
+
+        /*
+            枚举object's element
+            use for ... in statement
+
+            syntax
+            for(var variable in object){
+
+            }
+
+            fro...in statement, loop the number of element within the object
+                every implement, will set the the element name within the object toward the variable
+        */
+
+        for(var n in obj){
+            console.log('属性名'+n);
+
+            console.log('属性值：'+obj[n]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

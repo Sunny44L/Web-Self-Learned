@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* 
+            相等运算符
+                compare if both values are equal
+            ==
+                -convert to number
+                -if they are equal then true, not equal false
+                -'1' will turn string to number
+
+            NOT == (opposite, to see if they are not equal)
+            != is the sign
+                -same as ==
+
+            ===(all equal)
+                -similar to ==, but does not convert data form, different
+                    data will result false
+                -only true when data type, and values are same
+
+            !==(not all equal)
+                -similar to === but opposite
+                -only false when data type, and values are same
+
+        */
+       console.log(1 == 1);//true
+
+       var a = 10;
+    //    console.log(a = 4);//this will make var a is 4
+        console.log(a ==4);//false
+ 
+           console.log('1' == 1);
+
+           console.log(true == 'hello');//false
+           console.log(true == '1');//true
+
+           /* some case does not turn into number 
+           like the following */
+           console.log(null == 0);//false
+
+           /* 
+                undefined is same as null
+                    therefore, undefined == null, true
+           */
+          console.log(undefined == null);
+
+          /* 
+            NaN does not equal to everthing, not even NaN itself
+          */
+         console.log(NaN == NaN);//false
+
+         /* 
+            if case above, then how do we confirm if its a NaN
+                since NaN does equal to NaN, and it is false
+
+            use isNaN()函数
+         */
+        var b =NaN;
+        console.log(isNaN(b));//true
+
+
+        console.log(10!=5);//true
+        
+        console.log(10!=10);//faalse
+        console.log('abdc'!= 'abdc');//faalse
+
+        console.log(123 === 123);//true
+        console.log('123' ===123);//false
+        console.log(null === undefined);//false
+
+
+        console.log(123 !== 123);//false
+        console.log(123 !== 234);//true
+        console.log(123 !== 'abc');//true
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

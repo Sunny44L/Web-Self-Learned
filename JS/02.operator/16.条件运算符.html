@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            conditional operator, ternary operator
+                syntax
+                    condition(条件）?语句1:语句2
+                -when condition process:
+                    first take thee value of the condition, 
+                        if this value is true, takes 语句1 and process result
+                        if false, then takes 语句2 then process result
+
+                -if condition is not Boolean, then it will be converted to boolean
+                    'hello'? alert ('sentence 1'): alert(sentence 2);
+        */
+
+        // false?alert('语句1'):alert('豫剧2');
+
+        var a = 142;
+        var b = 50, c =40;
+
+
+        // a > b ? alert ('a is bigger'):alert('b is bigger');
+
+        //this case is the let max have the bigger value among these two
+        // var max = a > b? a : b;
+
+        // take the biggest among a b c
+        // max = max > c? max :c;
+
+        //in one sentence
+        //but not recommanded, because its too hard to read
+        var max = a > b? (a > c ? a : c ): (b > c ? b : c );
+
+        console.log('max = ' + max);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

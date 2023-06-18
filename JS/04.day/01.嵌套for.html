@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            ex. use for to display following diagram
+            *
+            **
+            ***
+            ****
+            *****
+            ******
+
+
+            simplar version first
+            ******
+            ******
+            ******
+            ******
+            ******
+
+            *****
+            ****
+            ***
+            **
+            *
+        */
+
+        //use document to diplay
+     /*    document.write('******<br>');
+        document.write('******<br>');
+        document.write('******<br>');
+        document.write('******<br>');
+        document.write('******<br>');
+ */
+        //use for to create this
+        //this is basically is the height of the shape
+        for(var i = 0; i <5 ; i++){
+
+            //creat another for loop to controll the width of the shape
+            //when the outside loop once, then inside loop 5 times
+            //
+            /* for(var j = 0; j <i+1;j++){
+                document.write('*&nbsp;&nbsp;');
+            } */
+            for(var j = 0; j <5 - i;j++){
+                document.write('*&nbsp;&nbsp;');
+            }
+            //break tag here
+            document.write('<br>');
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

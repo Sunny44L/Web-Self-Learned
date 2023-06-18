@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt('enter your number to be determine as if prime number.');
+        var flag = true;
+        if(num ==2){
+            alert(' 2 is a prime number.');
+        }else if(num <=1){
+            alert('not a valid number to be determine');
+        }else{
+            //find out every number possible to be divided
+            for(var i = 2; i < num; i++){
+                if(num % i ==0){
+                    //this path is not a prime number
+                    flag = false;
+                    break;
+                }
+            }
+            //remember, if detect if the condition is true or else
+            if(flag){
+                alert(num + ' is a prime number.');
+            }else{
+                alert('this is not a prime number.')
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

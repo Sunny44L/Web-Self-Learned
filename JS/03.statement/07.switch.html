@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            switch
+                syntax
+                switch(condition){
+                    case表达式:
+                        statement...
+                        break;
+                    case表达式:
+                        statement...
+                        break;
+                    case表达式:
+                        statement...
+                        break;
+                    case表达式:
+                        statement...
+                        break;
+                    default:
+                        statement...
+                        break;
+                }
+
+
+                break; means to stop process the code below
+        */
+       /* 
+            执行流程
+                switch ... case ...statement
+                -will compare to each one of the  condition toward cases with ===,
+                    if true then start with this code,
+                        -all code below will be process
+                        -break; can use to stop process below, only process current
+                            case
+                    false will move on to the next
+
+                === will have a lot of false output, use default
+                    -all false will display this
+
+
+            switch is similar to if, similar function
+                -switch havve a more stricted value
+                -use on condition
+        */
+
+
+
+        //according to num value, ouput the coressponding line
+        var num = 1;
+
+        /* if(num==1){
+            console.log('one')
+        }else if(num == 2){
+            console.log('two')
+        }else if(num == 3){
+            console.log('three')
+        } */
+
+        switch(num){
+            case 1:
+                console.log('one');
+                break;
+            case 2:
+                console.log('two');
+                break;
+            case 3:
+                console.log('three');
+                break;
+            default:
+                console.log('not applicable');
+                break;
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

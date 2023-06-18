@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            print from 1 to 100's 7 time of each number, and sum all of them together
+            打印1 到 100 的7倍数及它们的总和
+        */
+
+        for(var num = 1, sum = 0, count = 0;num <=100; num = num + 1){
+            
+            
+            if( num %7 ==0){
+                console.log(num);
+                sum = sum + num;
+                count++;
+            }
+        }
+        console.log('the sum is '+ sum +', the number they added is '+ count);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

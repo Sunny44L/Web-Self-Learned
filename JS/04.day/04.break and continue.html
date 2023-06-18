@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            break stop the nearest loop and switch
+        */
+
+        /* for(var i=0;i<5;i++){
+            console.log(i);
+            if(i==2){
+                break;
+            }
+        } */
+
+        /* for(var i=0;i<5;i++){
+            console.log('@outter loop'+i);
+            for(var j=0;j<5; j++){
+                break;
+                console.log('Inner:'+j);
+                
+            }
+        } */
+
+
+        /* 
+            if wannted to close loop outside ot further loop, label that loop
+            when using the break,label when it gonna break
+
+            syntax
+            label:
+            break label;
+        */
+       /* outer:
+        for(var i=0;i<5;i++){
+            console.log('@outter loop'+i);
+            for(var j=0;j<5; j++){
+                
+                break outer;
+                console.log('Inner:'+j);
+                
+            }
+        } */
+
+
+        /* 
+            contine use to past current loop
+            also work to its closest loop
+        */
+        /* for(var i=0; i<5; i++){
+            if(i==2){
+                continue;
+            }
+            console.log(i);
+        } */
+        outer:
+        for(var i=0; i<5; i++){
+            for(var j=0 ; j<5 ; j++){
+                if(j==1){
+                    continue outer;
+                }
+                console.log("--->"+j);
+                
+            }
+            console.log("@--->"+i);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

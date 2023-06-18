@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            if 
+                syntax 2
+                    if(condition){
+                        statement
+                    }else{
+                        statement 2
+                    }
+
+                syntax 3
+                    if(condition){
+                        statement
+                    }else if (condition){
+                        statement
+                    }else if (condition){
+                        statement
+                    }else{
+                        statement
+                    }
+
+
+
+            if ... else ... statement
+                    true will process statement after if
+                    false will process statement after else
+
+            if ...else if...else
+                    -this will look for the true condition, and process that statement
+                    -true will proccess that statement
+
+                    -order is important to layout, or it will statisfy condition
+                        but there are more precise or closer condition should goes
+                        ex. var a = 45
+                            if(a >20){
+                                alert（‘你已成年’）；
+                            }else if(a > 40){
+                                alert('中年了')；
+                            }else if（a > 60){
+                                alert('老了')；
+                            }else{
+                                alert('很老了')；
+                            }
+                        -the first if will took all the case, and the rest will never be process
+
+                        -unless condition (a >20 && a <=39)
+
+                    -else will use if non satisfy, not writing else, will have
+                        not the process if non satisfy
+        */
+       var age = 50;
+
+       /* if(age >= 60){
+           alert('you have retired');
+       }else{
+           alert('you havent retired yet');
+       } */
+
+        if(age > 100){
+            alert('活着挺没意思');
+        }else if(age > 80){
+            alert('你已经老了');
+        }else if(age > 60){
+            alert('你退休了吧');
+        }else if(age > 40){
+            alert('人到中年了');
+        }else if(age > 20){
+            alert('已经是个成年人了');
+        }else{
+            alert('你还小');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

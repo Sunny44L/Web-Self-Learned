@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /* 
+            if needed 16 hexadeciaml numeral system
+                start with 0x
+
+            if needed 8 octal numeral system
+                start with 0
+
+            if need 2 binary number
+                start with 0b
+        */
+    //    16 hexxadecimal
+        var a = 0x10;
+        a = 0xff;
+        a = 0xbfa;
+        
+        // 8 octal
+        a = 070;
+
+        // 2 binary
+        a = 0b10;
+
+        // some browser will take octal as decimal
+        // and some will take it as octal.
+        a = 070;
+
+        // use parseInt(x, 10), 10 specify the type of numeral system
+        a = parseInt(a,10);
+
+        console.log(typeof a);
+        console.log(a);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var obj = new Object();
+        /*  
+            add element into the object
+
+            element name:
+                -does not need to follow the normal naming rules
+                    -var, - . etc can be use
+                -but try not to use them
+        */
+       obj.name = '悟空';
+
+       //obj.var = 'hello';
+
+       /* 
+        if naming special element name, can not use . method to perform
+            need another naming method
+            syntax
+                object['element name'] = element value;
+
+            -also, when retriving use
+                object['element name']
+
+        using [] is more flexible
+            [] can use variable, then the variable will read the object element value
+            -this way is more convinience compare to .
+       */
+       obj['123'] = 567;
+       obj['nihao'] ='hello';
+
+       var n ='nihao';
+
+       console.log(obj[n]);
+
+       /* 
+            element value
+                JS object value, can be any data type
+                -even as another object 
+       */
+      obj.test = 123;
+      obj.test = true;
+      obj.test = null;
+      obj.test = undefined;
+
+      /* 
+        create a new obj
+      */
+        var obj2 =new Object();
+        obj2.name = 'bajie'
+
+        //set obj2 as obj element
+        obj.test = obj2;
+
+        /* 
+           in 运算符
+           -use to check does the object have a certain element
+            -if yes then true, else is false
+
+            syntax:
+                'element name' in object
+        */
+      //console.log(obj.test.name);
+
+      //check does test2 is in object
+      console.log('test2' in obj);
+      console.log('name' in obj);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

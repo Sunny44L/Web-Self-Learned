@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+            函数(function)
+            -   also an object
+            - can box some function, and use it when needed
+            - save some code and use when need
+
+        */
+
+        //this method is rarely use
+        //creating a function
+        //can box a ccode as string to send to function
+        //var fun = new Function('console.log("hello this is my first function");');
+
+        //the boxed code will not process directly
+        //code inside function will be process when use
+        /* 
+            using the function
+            syntax:
+                fun()
+        */
+        //fun();
+
+        /* 
+            use function statement to create function
+                syntax:
+                function function name([parameter 1, parameter 2...parameter x]){
+                    statement...
+                }
+                [] mean selectable
+        */
+
+        function func2(){
+            console.log('this is my second function~~~');
+            alert('hahahha');
+            document.write('~~~~(>_<)~~~~~');
+        }
+        
+
+        //console.log(func2);
+        //use the func2
+
+        //func2();
+
+        /* 
+            use function operator to create a function
+            var function name = function([parameter 1, parameter 2...parameter x]){
+                statement...
+            }
+        */
+
+        /* 
+            this method have same result as one above, but use ; as ending
+        */
+        var fun3 = function(){
+            console.log('I am an code inside anonmynous function');
+        };
+
+        fun3();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

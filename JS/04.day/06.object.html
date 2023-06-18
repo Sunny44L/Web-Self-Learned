@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* 
+        -string
+        -number
+        -boolean
+        -null
+        -undefined
+
+            other than those top five, the rest are object data type
+            object data type
+
+        normal data type does not have any relation
+            what is we want to combine those data, 
+            ex, name(Sunny), gender(male), age(18)
+
+            we can group them together, because they are for one person
+
+            object save different type of date, and belong to one data
+
+            对象分类：
+            1.内建对象
+                -由ES标准中定义的对象，在任何的ES的实现中都可以使用
+                -比如：Math String Number Boolean Function Object...
+
+            2.宿主对象
+                -由JS的运行环境提供对象，目前来讲主要指由浏览器提供对象
+                -比如BOM(browser) DOM(document)
+                    -console.log(BOM),document.write(BOM)
+            
+            3.自定义对象
+                -由开发人员自己创建的对象
+        */
+
+        //create a object
+        /* 
+            new, is use to create 函数的 constructor
+                constructor is use to create 
+
+
+        */
+            var obj = new Object();
+
+            //console.log(obj);
+
+            /* 
+                object save element
+                adding element into an object
+                syntax
+                    object.element name = element value;
+            */
+
+            //let obj add a name element
+            obj.name = '悟空';
+            // add a gender
+            obj.gender = 'male';
+            //add age
+            obj.age = 18;
+
+            /* 
+                retrive the date from object
+                syntax:
+                    object.name of element
+            */
+
+            //console.log(obj.name);
+
+            /* 
+                change the object element value
+                    syntax:
+                    object.element name = new value;
+            */
+           obj.name = 'tom';
+
+           //delete the object element
+           /* 
+                syntax:
+                delete object.element name
+           */
+          delete obj.name;
+
+           console.log(obj.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
